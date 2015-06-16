@@ -1,0 +1,49 @@
+public class koin
+{
+public static void main(String [] args)
+{
+	int a[] = new int[12];
+	int aa;
+	int b[] = new int[12];
+	int bb;
+	int c;
+	int d;
+	aa = 0;
+	c = 0;
+	d = 0;
+	while (aa < a.length)
+	{
+		a[aa] = (int)(Math.random()*10);
+	if (a[aa] >= 5)
+	{
+		System.out.println("Gambar");
+		c += 1; 
+	}
+	else
+	{
+		System.out.println("Angka");
+		d += 1;
+	}
+		aa++;
+	}
+		System.out.println(" ");
+		System.out.println("Gambar : " +c);	
+		System.out.println("Angka : " +d);
+
+	if ( c == d)
+	{ 
+		System.out.println("Seri");
+	}
+	else
+	{
+	if ( c > d)
+	{
+		System.out.println("Gambar Menang");
+	}
+	else
+	{
+		System.out.println("Angka Menang");
+	}
+}
+}
+}
